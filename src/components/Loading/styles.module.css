@@ -1,0 +1,20 @@
+.container{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.spinn {
+  animation: spi 1s linear infinite;
+}
+
+@keyframes spi {
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+span{
+  margin-left: 5px;
+  font-size: 17px;
+}

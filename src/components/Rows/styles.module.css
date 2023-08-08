@@ -1,0 +1,92 @@
+.container{
+  display: flex;
+  position: relative;
+  border: 1.5px solid #1111;
+  padding: 10px;
+}
+
+.container:hover {
+  background-color:aliceblue;
+  transition: .3s;
+}
+.container_id{ 
+    width: 10%;
+}
+.container_title{
+    width: 30% ;
+}
+.container_body{
+    width: 60%;
+}
+
+.container_td_btn{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #5fb5fb;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+ }
+
+/**** S E C T I O N MODAL **** */
+
+.container_div{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width:450px;
+  max-height: 90vh;
+  margin: 0 20px;
+  background-color: #fff;
+  overflow-y: auto;
+  padding: 70px;
+  gap: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 1rem #00000025;
+}
+
+.container_div_i{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 15px;
+  right: 15px;
+  padding: 7px;
+  font-size: 16px;
+  background-color: #1111;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.container_div h2 {
+     font-size: 22px;
+}
+
+.container_div_div{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.container_div_div_i{
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 32px;
+  color: #5fb5fb;
+}
+
+
+/* /////////////////////  */
+
+
+@media screen and (max-width:450px) {
+      .container_div{
+        padding: 50px 20px;
+      }
+     
+}
